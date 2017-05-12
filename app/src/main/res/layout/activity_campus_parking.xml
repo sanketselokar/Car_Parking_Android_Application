@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimage"
+
+    tools:context="com.example.android.devyani.CampusParkingActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+
+        android:background="#d4d1d1"
+        android:layout_weight="0.12"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campus Parking:"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView"
+            android:textSize="40dp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+
+
+        android:background="#d4d1d1"
+        android:layout_weight="0.10"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/logoutButton"
+            android:textSize="30dp"
+            android:textColor="#994949"
+            android:layout_gravity="center_horizontal"
+            android:width="200dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parking Areas"
+        android:id="@+id/textView4"
+        android:onClick="onClickParkingAreas"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Account"
+        android:id="@+id/textView5"
+        android:onClick="onClickMyAccount"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="35dp" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimage"
+
+    tools:context="com.example.android.devyani.CampusParkingActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+
+        android:background="#d4d1d1"
+        android:layout_weight="0.12"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Areas"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView"
+            android:textSize="40dp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+
+
+        android:background="#d4d1d1"
+        android:layout_weight="0.10"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout2">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/logoutButton"
+            android:textSize="30dp"
+            android:textColor="#994949"
+            android:layout_gravity="center_horizontal"
+            android:width="200dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/linearLayout"
+        android:layout_above="@+id/linearLayout2" />
+
+
+</RelativeLayout>
